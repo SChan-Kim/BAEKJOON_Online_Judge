@@ -4,14 +4,18 @@ using namespace std;
 
 int main() {
 
-    int a,b;
+    int a,b,c,result;
 
-    cin >> a >> b;
+    cin >> a >> b >> c;
 
-    cout << a*(b%10) << endl;
-    cout << a*((b/10)%10) << endl;
-    cout << a*(b/100) << endl;
-    cout << a*b << endl;
+    result = 0;
+
+    if(b>=c)
+        result = -1;
+    else
+        result = a/(c-b) + 1;
+
+    cout << result << endl;
 
     return 0;
 }
