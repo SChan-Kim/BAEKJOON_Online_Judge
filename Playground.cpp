@@ -4,11 +4,14 @@ using namespace std;
 
 int main() {
 
-    cout << "|\\_/|" << endl;
-    cout << "|q p|   /}" << endl;
-    cout << "( 0 )\"\"\"\\" << endl;
-    cout << "|\"^\"\`    |" << endl;
-    cout << "||_/=\\\\__|" << endl;
+    int a,b;
+
+    cin >> a >> b;
+
+    cout << a*(b%10) << endl;
+    cout << a*((b/10)%10) << endl;
+    cout << a*(b/100) << endl;
+    cout << a*b << endl;
 
     return 0;
 }
