@@ -4,11 +4,22 @@ using namespace std;
 
 int main() {
 
-    int year, result;
+    int h,m;
 
-    cin >> year;
-    result = (year%4 == 0) ? ((year%100 != 0) ? 1 : ((year%400 == 0) ? 1:0)) : 0;
-    cout << result << endl;
+    cin >> h >> m;
+
+    if(m<45) {
+        if(h != 0)
+            h--;
+        else
+            h=23;
+        m = m+15;
+    }
+
+    else
+        m -= 45;
+
+    cout << h << " " << m << endl;
 
     return 0;
 }
