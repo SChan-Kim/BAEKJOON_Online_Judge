@@ -4,26 +4,12 @@ using namespace std;
 
 int main() {
 
-    int num, result, tmpNum;
+    int num;
 
-    cin >> num;
+    scanf("%d",&num);
 
-    tmpNum = 1;
-
-    if(num == 1)
-        result = 0;
-        
-    else {
-        for(int i=1; i<num; i++) {
-            tmpNum += i*6;
-            if(tmpNum >= num) {
-                result = i;
-                break;
-            }
-        }
-    }
-
-    cout << result+1 << endl;
+    for(int i=0; i<num; i++)
+        cout << i+1 << "\n";
 
     return 0;
 }
