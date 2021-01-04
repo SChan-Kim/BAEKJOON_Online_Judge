@@ -1,2 +1,2 @@
 # BAEKJOON_Online_Judge
-BAEKJOON_Online_Judge by C++
+BAEKJOON_Online_Judge by SChan_Kim
